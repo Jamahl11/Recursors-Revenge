@@ -44,9 +44,18 @@ TagManager:
   - name: background
     uniqueID: 3602263313
     locked: 0
-  - name: house
-    uniqueID: 1227112307
+  - name: tree1
+    uniqueID: 1477908909
+    locked: 0
+  - name: tree2
+    uniqueID: 972819411
+    locked: 0
+  - name: tree3
+    uniqueID: 3113396587
     locked: 0
   - name: player
     uniqueID: 452174043
+    locked: 0
+  - name: house
+    uniqueID: 1227112307
     locked: 0
