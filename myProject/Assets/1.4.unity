@@ -133,8 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 336546641}
   - component: {fileID: 336546640}
-  - component: {fileID: 336546643}
-  - component: {fileID: 336546642}
   m_Layer: 8
   m_Name: player (2)
   m_TagString: Player
@@ -183,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 452174043
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1412517273, guid: 0fdb53171797f4045b6ae2279cb0f155, type: 3}
+  m_Sprite: {fileID: -2108307286, guid: 919cd1fe2802a4b31a8736f4cb2525a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -191,7 +189,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &336546641
@@ -209,41 +207,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &336546642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336546639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b508187112d842cb8ce866311ba6f8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb2D: {fileID: 336546643}
-  moveSpeed: 1
---- !u!50 &336546643
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336546639}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &825459805
 GameObject:
   m_ObjectHideFlags: 0
