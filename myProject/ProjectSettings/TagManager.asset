@@ -53,9 +53,9 @@ TagManager:
   - name: tree3
     uniqueID: 3113396587
     locked: 0
-  - name: player
-    uniqueID: 452174043
-    locked: 0
   - name: house
     uniqueID: 1227112307
+    locked: 0
+  - name: player
+    uniqueID: 452174043
     locked: 0
