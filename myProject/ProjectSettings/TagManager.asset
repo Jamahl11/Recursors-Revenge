@@ -59,6 +59,9 @@ TagManager:
   - name: player
     uniqueID: 452174043
     locked: 0
+  - name: gate
+    uniqueID: 3926664839
+    locked: 0
   - name: house 2
     uniqueID: 105468453
     locked: 0
