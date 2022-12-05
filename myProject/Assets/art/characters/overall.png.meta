@@ -456,10 +456,10 @@ TextureImporter:
       name: overall_16
       rect:
         serializedVersion: 2
-        x: 19
-        y: 17
-        width: 17
-        height: 24
+        x: 14
+        y: 11
+        width: 21
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +477,10 @@ TextureImporter:
       name: overall_17
       rect:
         serializedVersion: 2
-        x: 65
-        y: 17
-        width: 17
-        height: 24
+        x: 61
+        y: 11
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,6 +490,48 @@ TextureImporter:
       bones: []
       spriteID: 9fed8c74eef5a4ef7a4ca83935aa6109
       internalID: -813898725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: overall_18
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 11
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8761d1a87075b4b7e8cee70cbd766177
+      internalID: -1824628318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: overall_19
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 11
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e40238b60f4400f8b5cc481ffeb33a
+      internalID: 508343099
       vertices: []
       indices: 
       edges: []
@@ -513,6 +555,8 @@ TextureImporter:
       overall_14: 2134561249
       overall_13: -623439557
       overall_9: 988196921
+      overall_19: 508343099
+      overall_18: -1824628318
       overall_5: -584879059
       overall_2: -1106162694
       overall_8: 337092530
