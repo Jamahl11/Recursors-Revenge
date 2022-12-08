@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class clickEagle : MonoBehaviour
+public class clickEagle1 : MonoBehaviour
 {
     SpriteRenderer eagleSpriteRenderer;
     int frame = 0;
@@ -18,7 +18,7 @@ public class clickEagle : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             //now your gameObject was clicked!
-            Debug.Log("Eagle is clicked!");
+            Debug.Log("Eagle 1 is clicked!");
             eagleSpriteRenderer.color = Color.red;
             start = 1;
         }
