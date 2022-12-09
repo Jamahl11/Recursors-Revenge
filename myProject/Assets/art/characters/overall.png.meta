@@ -536,6 +536,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: overall_20
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 7
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd8600fd59ba4cd0b8c1fb69170110b
+      internalID: 538369364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -566,6 +587,7 @@ TextureImporter:
       overall_1: -1717879132
       overall_7: 752997953
       overall_15: -1013118557
+      overall_20: 538369364
       overall_10: 444340293
   spritePackingTag: 
   pSDRemoveMatte: 0
