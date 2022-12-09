@@ -4,39 +4,46 @@ using UnityEngine;
 
 public class clickEagle1 : MonoBehaviour
 {
-    SpriteRenderer eagleSpriteRenderer;
+    SpriteRenderer eagle1SpriteRenderer;
     int frame = 0;
     int start = 0;
 
     void Start()
     {
-        eagleSpriteRenderer = GetComponent<SpriteRenderer>();
+        eagle1SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void OnMouseEnter()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            //now your gameObject was clicked!
-            Debug.Log("Eagle 1 is clicked!");
-            eagleSpriteRenderer.color = Color.red;
-            start = 1;
-        }
-    }
+    //void OnMouseEnter()
+    //{
+      //  if (Input.GetMouseButtonDown(0))
+        //{
+          //  //now your gameObject was clicked!
+           // Debug.Log("Eagle is clicked!");
+            //eagleSpriteRenderer.color = Color.red;
+            //start = 1;
+       // }
+    //}
 
     private void updateEagle()
     {
         frame++;
-        if (frame >= 400)
+        if (frame >= 100)
         {
             Debug.Log("Frame move");
-            eagleSpriteRenderer.enabled = false;
+            eagle1SpriteRenderer.enabled = false;
             start = 0;
         }
     }
-
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            //now your gameObject was clicked!
+            Debug.Log("Eagle is clicked!");
+            eagle1SpriteRenderer.color = Color.red;
+            start = 1;
+        }
+
         if (start == 1)
         {
             updateEagle();

@@ -13,7 +13,28 @@ public class clickEagle : MonoBehaviour
         eagleSpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void OnMouseEnter()
+    //void OnMouseEnter()
+    //{
+      //  if (Input.GetMouseButtonDown(0))
+        //{
+          //  //now your gameObject was clicked!
+           // Debug.Log("Eagle is clicked!");
+            //eagleSpriteRenderer.color = Color.red;
+            //start = 1;
+       // }
+    //}
+
+    private void updateEagle()
+    {
+        frame++;
+        if (frame >= 100)
+        {
+            Debug.Log("Frame move");
+            eagleSpriteRenderer.enabled = false;
+            start = 0;
+        }
+    }
+    void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -22,21 +43,7 @@ public class clickEagle : MonoBehaviour
             eagleSpriteRenderer.color = Color.red;
             start = 1;
         }
-    }
 
-    private void updateEagle()
-    {
-        frame++;
-        if (frame >= 400)
-        {
-            Debug.Log("Frame move");
-            eagleSpriteRenderer.enabled = false;
-            start = 0;
-        }
-    }
-
-    void Update()
-    {
         if (start == 1)
         {
             updateEagle();
