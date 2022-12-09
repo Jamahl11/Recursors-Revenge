@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger2 : MonoBehaviour
 {
 
     public Dialogue dialogue;
-
-
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        TriggerDialogue();
+        
     }
 
     public void TriggerDialogue()
     {
-        if (FindObjectOfType<DialogueManager>())
-        {
-            Debug.Log("dialogue is null");
-        }
+
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        TriggerDialogue();
+    }
 }

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
-    private Queue<string> sentences;
+    private Queue<string> sentences = new Queue<string>();
 
     public Text dialogueText;
 
@@ -18,9 +18,10 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        sentences = new Queue<string>();
+        Debug.Log("Start is called");
+        //sentences = new Queue<string>();
 
         dialogueBox = GameObject.Find("/Canvas/DialogueBox");
 
@@ -28,12 +29,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-
+        
         animator.SetBool("IsOpen", true);
 
         Debug.Log("Starting Conversation with " + dialogue.name);
 
-        sentences.Clear();
+        //sentences.Clear();
 
         dialogueBox.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().SetText(dialogue.name);
 
