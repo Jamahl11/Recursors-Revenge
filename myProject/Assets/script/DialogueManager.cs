@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject dialogueBox;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +28,14 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+
+        animator.SetBool("IsOpen", true);
+
         Debug.Log("Starting Conversation with " + dialogue.name);
 
         sentences.Clear();
 
-        dialogueBox.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().SetText(dialogue.name);
+        dialogueBox.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().SetText(dialogue.name);
 
         foreach (string sentence in dialogue.sentences)
         {
@@ -52,12 +57,13 @@ public class DialogueManager : MonoBehaviour
 
         Debug.Log(sentence);
 
-        dialogueBox.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().SetText(sentence);
+        dialogueBox.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().SetText(sentence);
 
     }
 
     void EndDialogue()
     {
+        animator.SetBool("IsOpen", false);
         Debug.Log("End of Conversation");
     }
 
