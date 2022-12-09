@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 157881396}
   - component: {fileID: 157881395}
   - component: {fileID: 157881397}
+  - component: {fileID: 157881398}
   m_Layer: 7
   m_Name: background
   m_TagString: Untagged
@@ -3199,7 +3200,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157881393}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3218,6 +3219,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.84, y: 5.44}
   m_EdgeRadius: 0
+--- !u!19719996 &157881398
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157881393}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &308117202
 GameObject:
   m_ObjectHideFlags: 0
