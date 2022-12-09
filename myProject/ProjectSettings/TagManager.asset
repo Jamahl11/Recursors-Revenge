@@ -54,6 +54,9 @@ TagManager:
   - name: tree3
     uniqueID: 3113396587
     locked: 0
+  - name: path
+    uniqueID: 3737308939
+    locked: 0
   - name: house
     uniqueID: 1227112307
     locked: 0
